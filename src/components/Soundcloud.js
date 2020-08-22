@@ -13,7 +13,7 @@ class Soundcloud extends Component {
             style={{ backgroundColor: "#33393E" }}
           >
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-breeze&amp;show_artwork=false&color=#33393E"
+              url="https://soundcloud.com/khuongquach/swan-breeze&show_artwork=false&color=%2333393E"
               width="100%"
               height="100%"
             />
@@ -29,10 +29,10 @@ class Soundcloud extends Component {
           {/* Sunset */}
           <div
             className="soundclound-player"
-            style={{ backgroundColor: "#D2B3B1" }}
+            style={{ backgroundColor: "#BC4F64" }}
           >
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-sunset&amp;show_artwork=false&color=#D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-sunset&amp;show_artwork=false&color=%23BC4F64"
               width="100%"
               height="100%"
             />
@@ -41,17 +41,17 @@ class Soundcloud extends Component {
               width="100%"
               height="100%"
               className={"artwork"}
-              style={{ backgroundColor: "#D2B3B1" }}
+              style={{ backgroundColor: "#BC4F64" }}
             />
           </div>
 
           {/* Lights */}
           <div
             className="soundclound-player"
-            style={{ backgroundColor: "#D79E65" }}
+            style={{ backgroundColor: "#C07442" }}
           >
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-lights&amp;show_artwork=false&color=#D79E65"
+              url="https://soundcloud.com/khuongquach/swan-lights&amp;show_artwork=false&color=%23C07442"
               width="100%"
               height="100%"
             />
@@ -60,28 +60,28 @@ class Soundcloud extends Component {
               width="100%"
               height="100%"
               className={"artwork"}
-              style={{ backgroundColor: "#D79E65" }}
+              style={{ backgroundColor: "#C07442" }}
             />
           </div>
         </div>
         <div className={"soundclound"}>
           <div className="soundclound-player">
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-midnight&amp;show_artwork=false&color=#D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-midnight&amp;show_artwork=false&color=%23D2B3B1"
               width="100%"
               height="100%"
             />
           </div>
           <div className="soundclound-player">
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-sky&amp;show_artwork=false&color=#D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-sky&amp;show_artwork=false&color=%23D2B3B1"
               width="100%"
               height="100%"
             />
           </div>
           <div className="soundclound-player">
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-lunar&amp;show_artwork=false&color=#D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-lunar&amp;show_artwork=false&color=%23D2B3B1"
               width="100%"
               height="100%"
             />
