@@ -22,9 +22,6 @@ class Header extends Component {
               <Nav.Link className="nav-link" href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/">
-                End
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
