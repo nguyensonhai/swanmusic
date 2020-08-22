@@ -23,6 +23,7 @@ class Soundcloud extends Component {
               height="100%"
               className={"artwork"}
               style={{ backgroundColor: "#33393E" }}
+              id="breeze"
             />
           </div>
 
@@ -42,6 +43,7 @@ class Soundcloud extends Component {
               height="100%"
               className={"artwork"}
               style={{ backgroundColor: "#BC4F64" }}
+              id="sunset"
             />
           </div>
 
@@ -61,29 +63,66 @@ class Soundcloud extends Component {
               height="100%"
               className={"artwork"}
               style={{ backgroundColor: "#C07442" }}
+              id="lights"
             />
           </div>
         </div>
+        {/* Midnight */}
         <div className={"soundclound"}>
-          <div className="soundclound-player">
+          <div
+            className="soundclound-player"
+            style={{ backgroundColor: "#98725B" }}
+          >
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-midnight&amp;show_artwork=false&color=%23D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-midnight&amp;show_artwork=false&color=%2398725B"
               width="100%"
               height="100%"
             />
+            <Image
+              src={require("../assets/artwork/midnight.jpg")}
+              width="100%"
+              height="100%"
+              className={"artwork"}
+              style={{ backgroundColor: "#98725B" }}
+              id="midnight"
+            />
           </div>
-          <div className="soundclound-player">
+          {/* Sky */}
+          <div
+            className="soundclound-player"
+            style={{ backgroundColor: "#6981A9" }}
+          >
             <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-sky&amp;show_artwork=false&color=%23D2B3B1"
+              url="https://soundcloud.com/khuongquach/swan-sky&amp;show_artwork=false&color=%236981A9"
               width="100%"
               height="100%"
             />
-          </div>
-          <div className="soundclound-player">
-            <ReactPlayer
-              url="https://soundcloud.com/khuongquach/swan-lunar&amp;show_artwork=false&color=%23D2B3B1"
+            <Image
+              src={require("../assets/artwork/sky.jpg")}
               width="100%"
               height="100%"
+              className={"artwork"}
+              style={{ backgroundColor: "#6981A9" }}
+              id="sky"
+            />
+          </div>
+          {/* Lunar */}
+          <div
+            className="soundclound-player"
+            style={{ backgroundColor: "#D1604E" }}
+          >
+            <ReactPlayer
+              url="https://soundcloud.com/khuongquach/swan-lunar&amp;show_artwork=false&color=%23D1604E"
+              width="100%"
+              height="100%"
+            />
+            <Image
+              src={require("../assets/artwork/lunar.jpg")}
+              width="100%"
+              height="100%"
+              className={"artwork"}
+              style={{ backgroundColor: "#D1604E" }}
+              id="lunar"
             />
           </div>
         </div>

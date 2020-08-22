@@ -6,7 +6,7 @@ class Banner extends Component {
   render() {
     return (
       <div className={"banner"}>
-        <Image fluid src={require("../assets/home/banner.png")} />
+        <Image fluid src={require("../assets/home/bg.png")} className="image" />
       </div>
     );
   }

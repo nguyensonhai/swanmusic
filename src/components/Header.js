@@ -10,10 +10,10 @@ class Header extends Component {
           className="navbar mr-auto"
           collapseOnSelect
           expand="lg"
-          variant="dark"
+          variant="light"
         >
           <a href="/">
-            <Image width={80} src={require("../assets/logo/logo-white.png")} />
+            <Image width={80} src={require("../assets/logo/logo-black.png")} />
           </a>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

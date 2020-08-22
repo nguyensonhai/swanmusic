@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@media (min-width: 0px) {
+  .title-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    .title-text {
+      font-family: "Alata";
+      font-size: 2em;
+      color: #bfbfbf;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .title-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .title-text {
+      font-family: "Alata";
+      font-size: 2.5em;
+      color: #bfbfbf;
+    }
+  }
+}
