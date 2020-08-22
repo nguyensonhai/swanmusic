@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
-import "./Banner.scss";
+import "../styles/Banner.scss";
+
 class Banner extends Component {
   render() {
     return (
       <div className={"banner"}>
-        <Image fluid src={require("../../assets/home/banner.png")} />
+        <Image fluid src={require("../assets/home/banner.png")} />
       </div>
     );
   }

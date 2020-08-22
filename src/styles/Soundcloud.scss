@@ -1,0 +1,41 @@
+.soundclound {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 0px) {
+  .soundclound-player {
+    width: 30vw;
+  }
+}
+@media (min-width: 768px) {
+  .soundclound-player {
+    width: 30vw;
+  }
+}
+@media (min-width: 992px) {
+  .soundclound-player {
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  .soundclound-player {
+    width: 30vw;
+  }
+}
+@media (min-width: 1600px) {
+  .soundclound-player {
+    width: 25vw;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .artwork {
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}

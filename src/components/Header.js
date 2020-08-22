@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Image } from "react-bootstrap";
-import "./Header.scss";
+import "../styles/Header.scss";
 
 class Header extends Component {
   render() {
@@ -13,10 +13,7 @@ class Header extends Component {
           variant="dark"
         >
           <a href="/">
-            <Image
-              width={80}
-              src={require("../../assets/logo/logo-white.png")}
-            />
+            <Image width={80} src={require("../assets/logo/logo-white.png")} />
           </a>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

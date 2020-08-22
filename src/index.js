@@ -5,8 +5,8 @@ import { createBrowserHistory } from "history";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 // components for this product
-import Components from "./views/Components/Components";
-import Header from "./components/Header/Header";
+import Components from "./views/Components";
+import Header from "./components/Header";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
