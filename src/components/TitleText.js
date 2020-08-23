@@ -1,12 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles/scss/TitleText.scss";
 
 function TitleText(props) {
-  const { text } = props;
+  const { text, link } = props;
 
   return (
     <div className="title-container">
-      <p className="title-text">{text}</p>
+      <a href={link} target="_blank">
+        <div class="btn from-left">{text}</div>
+      </a>
     </div>
   );
 }

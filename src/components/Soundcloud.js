@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import "../styles/scss/Soundcloud.scss";
 import { Image } from "react-bootstrap";
@@ -67,7 +67,7 @@ function Soundcloud() {
         </div>
       </div>
       {/* Midnight */}
-      <div className={"soundclound"}>
+      {/* <div className={"soundclound"}>
         <div
           className="soundclound-player"
           style={{ backgroundColor: "#98725B" }}
@@ -85,9 +85,9 @@ function Soundcloud() {
             style={{ backgroundColor: "#98725B" }}
             id="midnight"
           />
-        </div>
-        {/* Sky */}
-        <div
+        </div> */}
+      {/* Sky */}
+      {/* <div
           className="soundclound-player"
           style={{ backgroundColor: "#6981A9" }}
         >
@@ -104,9 +104,9 @@ function Soundcloud() {
             style={{ backgroundColor: "#6981A9" }}
             id="sky"
           />
-        </div>
-        {/* Lunar */}
-        <div
+        </div> */}
+      {/* Lunar */}
+      {/* <div
           className="soundclound-player"
           style={{ backgroundColor: "#D1604E" }}
         >
@@ -124,7 +124,7 @@ function Soundcloud() {
             id="lunar"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

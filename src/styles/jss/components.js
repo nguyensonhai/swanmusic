@@ -23,9 +23,9 @@ const componentsStyle = {
     zIndex: "3",
   },
   mainRaised: {
-    margin: "-50px 0px 0px",
-    borderTopLeftRadius: "30px",
-    borderTopRightRadius: "30px",
+    margin: "-20px 0px 0px",
+    // borderTopLeftRadius: "20px",
+    // borderTopRightRadius: "20px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
   },

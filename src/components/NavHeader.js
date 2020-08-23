@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { Navbar, Nav, Image } from "react-bootstrap";
-import "../styles/scss/Header.scss";
+import "../styles/scss/NavHeader.scss";
 
-function Header() {
+function NavHeader() {
   return (
     <div>
       <Navbar
         className="navbar mr-auto"
         collapseOnSelect
-        expand="lg"
+        expand="xl"
         variant="light"
       >
         <a href="/">
@@ -27,4 +27,4 @@ function Header() {
     </div>
   );
 }
-export default Header;
+export default NavHeader;
