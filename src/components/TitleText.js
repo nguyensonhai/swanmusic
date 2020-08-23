@@ -6,8 +6,8 @@ function TitleText(props) {
 
   return (
     <div className="title-container">
-      <a href={link} target="_blank">
-        <div class="btn from-left">{text}</div>
+      <a href={link}>
+        <p className="title-text">{text}</p>
       </a>
     </div>
   );

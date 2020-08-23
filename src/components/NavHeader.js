@@ -19,7 +19,13 @@ function NavHeader() {
           <Nav className="mr-auto"></Nav>
           <Nav>
             <Nav.Link className="nav-link" href="/">
-              Home
+              <div class="btn from-left">Home</div>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="/music">
+              <div class="btn from-left">Music</div>
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="/about">
+              <div class="btn from-left">About</div>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
