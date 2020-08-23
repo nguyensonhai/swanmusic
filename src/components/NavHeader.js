@@ -21,10 +21,10 @@ function NavHeader() {
             <Nav.Link className="nav-link" href="/">
               <div class="btn from-left">Home</div>
             </Nav.Link>
-            <Nav.Link className="nav-link" href="/music">
+            <Nav.Link className="nav-link" href="/">
               <div class="btn from-left">Music</div>
             </Nav.Link>
-            <Nav.Link className="nav-link" href="/about">
+            <Nav.Link className="nav-link" href="/">
               <div class="btn from-left">About</div>
             </Nav.Link>
           </Nav>

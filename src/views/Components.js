@@ -33,7 +33,7 @@ function Components(props) {
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <TitleText text="MUSIC" link="/music" />
+        <TitleText text="MUSIC" link="/" />
         <Soundcloud />
         <Footer />
       </div>
