@@ -8,6 +8,17 @@
   }
   .soundclound-player {
     margin: 10px 10px 10px 10px;
+    width: 90%;
+    height: 90%;
+  }
+  .visualSoundContainer {
+    border-radius: 30px;
+  }
+  .element.style {
+    border-radius: 30px;
+  }
+  .soundclound-player div iframe {
+    border-radius: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -21,5 +32,10 @@
   }
   .soundclound-player {
     margin: 10px 10px 10px 10px;
+    width: 400px;
+    height: 400px;
+  }
+  .soundclound-player div iframe {
+    border-radius: 20px;
   }
 }
