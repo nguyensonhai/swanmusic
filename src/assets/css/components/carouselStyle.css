@@ -1,0 +1,55 @@
+@media (min-width: 0px) {
+  .carousel-explore-body {
+    width: 85%;
+    margin: 20px auto 0px auto;
+    min-height: 48vw;
+  }
+  .carousel-explore-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-explore-body {
+    width: 85%;
+    margin: 20px auto 0px auto;
+    min-height: 48vw;
+  }
+  .carousel-explore-img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-explore-body {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    min-height: 48vw;
+  }
+  .carousel-explore-img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  .carousel-explore-body {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    min-height: 48vw;
+  }
+  .carousel-explore-img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}

@@ -1,0 +1,179 @@
+@media (min-width: 0px) {
+  .inspirationsSvg {
+    padding: 20px;
+  }
+  .inspirations {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .spanInspirations {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .trans {
+    width: 45px;
+    height: 45px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .inspirationsSvg {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .inspirations {
+    text-align: left;
+  }
+  .spanInspirations {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .trans {
+    width: 55px;
+    height: 55px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .inspirationsSvg {
+    padding: 20px;
+  }
+  .inspirations {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .spanInspirations {
+    display: contents;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #212121;
+    margin-left: 0px;
+  }
+  .trans {
+    width: 60px;
+    height: 60px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inspirationsSvg {
+    padding: 20px;
+  }
+  .inspirations {
+    text-align: center;
+  }
+  .spanInspirations {
+    display: none;
+  }
+  .trans {
+    width: 85px;
+    height: 85px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .trans:hover {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+    background-color: #ffffff;
+    color: black;
+  }
+  [data-title]:after {
+    content: attr(data-title);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: "Quicksand";
+    font-size: 20px;
+    position: absolute;
+    padding: 2px 5px 2px 5px;
+    bottom: 100%;
+    left: 80%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 10px;
+  }
+  [data-title] {
+    position: relative;
+  }
+}
+@media (min-width: 1800px) {
+  .inspirationsSvg {
+    padding: 20px;
+  }
+  .inspirations {
+    text-align: center;
+  }
+  .spanInspirations {
+    display: none;
+    font-family: "Quicksand";
+  }
+  .trans {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 50%;
+  }
+
+  .trans:hover {
+    width: 130px;
+    height: 130px;
+  }
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+    background-color: #ffffff;
+    color: black;
+  }
+  [data-title]:after {
+    content: attr(data-title);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: "Quicksand";
+    font-size: 20px;
+    position: absolute;
+    padding: 2px 5px 2px 5px;
+    bottom: 100%;
+    left: 80%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    z-index: 999;
+    visibility: hidden;
+    border-radius: 10px;
+  }
+  [data-title] {
+    position: relative;
+  }
+}

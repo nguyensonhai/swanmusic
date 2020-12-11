@@ -14,8 +14,8 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
-import styles from "../../styles/jss/headerStyle";
-import { Navbar, Nav, Image } from "react-bootstrap";
+import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -60,9 +60,12 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const brandComponent = (
-    <Button className={classes.title}>
-      <Image width={80} src={require("../../assets/logo/logo-white.png")} />
+    <Button className={classes.title} onClick={scrollTop}>
+      {brand}
     </Button>
   );
   return (

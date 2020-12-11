@@ -7,15 +7,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
+import { Link } from "react-scroll";
 
-// @material-ui/icons
-
-// core components
-import Button from "../Button";
-
-import styles from "../../styles/jss/headerLinksStyle";
-
+import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import MusicNoteIcon from "@material-ui/icons/MusicNote";
+import TheatersIcon from "@material-ui/icons/Theaters";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 const useStyles = makeStyles(styles);
+
+const iconStyle = {
+  fontSize: 22,
+  marginTop: 0,
+  marginRight: 0,
+};
 
 export default function HeaderLinks() {
   const classes = useStyles();
@@ -23,122 +27,38 @@ export default function HeaderLinks() {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="youtube"
-          title="follow me on youtube"
+          id="music-tooltip"
+          title="My Inspirations"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            href="https://www.youtube.com/kellythevietnamese"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-youtube"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram"
-          title="follow me on instagram"
-          placement={window.innerWidth > 0 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/kellymakesvlog"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
+          <Link to="myinspirations" className={classes.navLink} offset={-50}>
+            <AccountCircleIcon style={iconStyle} />
+          </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="facebook"
-          title="follow me on facebook"
+          id="videos-tooltip"
+          title="Vieos"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/kellymakesvlog"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
+          <Link to="whatido" className={classes.navLink} offset={-50}>
+            <TheatersIcon style={iconStyle} />
+          </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="twitter"
-          title="follow me on twitter"
+          id="news-tooltip"
+          title="News"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            href="https://twitter.com/kellymakesvlog"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="goodreads"
-          title="follow me on goodreads  "
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://www.goodreads.com/user/show/41320452-kelly"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-goodreads"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="paypal"
-          title="give me a cup of coffee"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://www.paypal.com/paypalme/kellymakesvlog"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-paypal"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="google"
-          title="contact me"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="mailto:kellymakesvlog@gmail.com"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-google"} />
-          </Button>
+          <Link to="myprojects" className={classes.navLink} offset={-50}>
+            <MusicNoteIcon style={iconStyle} />
+          </Link>
         </Tooltip>
       </ListItem>
     </List>
