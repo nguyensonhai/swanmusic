@@ -11,6 +11,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Inspirations from "components/Inspirations/Inspirations.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import Bottom from "components/Bottom/Bottom.js";
+import SoundCloud from "components/SoundCloud/SoundCloud.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -42,6 +43,7 @@ export default function Components(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <Inspirations />
+        <SoundCloud />
         {/* <ThingsIDo />
         <Projects /> */}
       </div>

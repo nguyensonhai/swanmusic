@@ -21,8 +21,8 @@ const useStyles = makeStyles(styles);
 
 const iconStyle = {
   fontSize: 22,
-  marginTop: 0,
-  marginRight: 0,
+  marginTop: -1,
+  marginRight: 3,
 };
 
 export default function HeaderLinks() {
@@ -48,7 +48,7 @@ export default function HeaderLinks() {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Link to="whatido" className={classes.navLink} offset={-50}>
+          <Link to="mymusic" className={classes.navLink} offset={-50}>
             <MusicNoteIcon style={iconStyle} />
           </Link>
         </Tooltip>
@@ -60,7 +60,7 @@ export default function HeaderLinks() {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Link to="myprojects" className={classes.navLink} offset={-50}>
+          <Link to="myvideos" className={classes.navLink} offset={-50}>
             <TheatersIcon style={iconStyle} />
           </Link>
         </Tooltip>

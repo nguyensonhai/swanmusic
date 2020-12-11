@@ -1,0 +1,25 @@
+@media (min-width: 0px) {
+  .soundclound {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soundclound-player {
+    margin: 10px 10px 10px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .soundclound {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .soundclound-player {
+    margin: 10px 10px 10px 10px;
+  }
+}
