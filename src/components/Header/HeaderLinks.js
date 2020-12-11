@@ -9,10 +9,14 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 import { Link } from "react-scroll";
 
-import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+// core components
+import Button from "components/CustomButtons/Button.js";
+// @material-ui/icons
 import MusicNoteIcon from "@material-ui/icons/MusicNote";
 import TheatersIcon from "@material-ui/icons/Theaters";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+
+import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 const useStyles = makeStyles(styles);
 
 const iconStyle = {
@@ -27,38 +31,89 @@ export default function HeaderLinks() {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="music-tooltip"
+          id="inspirations"
           title="My Inspirations"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Link to="myinspirations" className={classes.navLink} offset={-50}>
-            <AccountCircleIcon style={iconStyle} />
+            <FavoriteIcon style={iconStyle} />
           </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="videos-tooltip"
-          title="Vieos"
+          id="music"
+          title="Music"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Link to="whatido" className={classes.navLink} offset={-50}>
+            <MusicNoteIcon style={iconStyle} />
+          </Link>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="videos"
+          title="Videos"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Link to="myprojects" className={classes.navLink} offset={-50}>
             <TheatersIcon style={iconStyle} />
           </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="news-tooltip"
-          title="News"
+          id="soundcloud"
+          title="Follow me on SoundCloud  "
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Link to="myprojects" className={classes.navLink} offset={-50}>
-            <MusicNoteIcon style={iconStyle} />
-          </Link>
+          <Button
+            href="https://soundcloud.com/khuongquach"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-soundcloud"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram"
+          title="Follow me on Instagram"
+          placement={window.innerWidth > 0 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.instagram.com/_khg.qu.98_"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-instagram"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="facebook"
+          title="Follow me on Facebook"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.facebook.com/duckhuong.quach"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-facebook"} />
+          </Button>
         </Tooltip>
       </ListItem>
     </List>
