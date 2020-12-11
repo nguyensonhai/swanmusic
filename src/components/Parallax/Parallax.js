@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import styles from "assets/jss/material-kit-react/components/parallaxStyle.js";
+import { Image } from "react-bootstrap";
 
 const useStyles = makeStyles(styles);
 
@@ -35,21 +36,32 @@ export default function Parallax(props) {
     var windowScrollTop = window.pageYOffset / 3;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
-  const { filter, className, children, style, image, small } = props;
+  const {
+    filter,
+    className,
+    children,
+    style,
+    image,
+    small,
+    imageCenter,
+  } = props;
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div
       className={parallaxClasses}
       style={{
         ...style,
-        backgroundImage: "url(" + image + ")",
-        transform: transform
+        backgroundImage:
+          window.innerWidth <= 768
+            ? "url(" + imageCenter + ")"
+            : "url(" + image + ")",
+        transform: transform,
       }}
     >
       {children}
@@ -63,5 +75,5 @@ Parallax.propTypes = {
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
-  small: PropTypes.bool
+  small: PropTypes.bool,
 };

@@ -34,7 +34,10 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/stocks/bg.jpg")}>
+      <Parallax
+        image={require("assets/img/stocks/bg.jpg")}
+        imageCenter={require("assets/img/stocks/bg-center.jpg")}
+      >
         <InfoArea />
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
