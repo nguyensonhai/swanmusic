@@ -32,8 +32,9 @@
   }
   .soundclound-player {
     margin: 10px 10px 10px 10px;
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
+    aspect-ratio: 1;
   }
   .soundclound-player div iframe {
     border-radius: 20px;

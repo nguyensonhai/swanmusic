@@ -15,7 +15,7 @@ import Button from "components/CustomButtons/Button.js";
 import MusicNoteIcon from "@material-ui/icons/MusicNote";
 import TheatersIcon from "@material-ui/icons/Theaters";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-
+import "assets/css/components/navHeaderStyle.css";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 const useStyles = makeStyles(styles);
 

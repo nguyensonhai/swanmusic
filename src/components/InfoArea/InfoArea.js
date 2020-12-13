@@ -26,7 +26,7 @@ export default function InfoArea() {
           src={
             play
               ? require("assets/img/icons/playing.gif")
-              : require("assets/img/icons/music.png")
+              : require("assets/img/logo/logo-white-trans.png")
           }
           roundedCircle
           fluid
